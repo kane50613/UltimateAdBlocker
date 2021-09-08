@@ -1,0 +1,31 @@
+{
+  "name": "Ultimate Ad Blocker",
+  "description": "block every ads!",
+  "version": "1.0",
+  "manifest_version": 2,
+  "icons": {
+    "16": "icons/block-ads_16.png",
+    "32": "icons/block-ads_32.png",
+    "48": "icons/block-ads_48.png",
+    "128": "icons/block-ads_128.png",
+    "1024": "icons/block-ads_1024.png"
+  },
+  "browser_action": {
+    "default_icon": "icons/block-ads_1024.png",
+    "default_title": "Ultimate Ad Blocker",
+    "default_popup": "popup/index.html"
+  },
+  "background": {
+    "persistent": true,
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "http://*/*",
+    "https://*/*",
+    "storage"
+  ]
+}
